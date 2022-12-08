@@ -1,0 +1,20 @@
+{
+  "name": "ppmockjsonserver",
+  "version": "1.0.0",
+  "description": "Mock server use the json server.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js localhost 8080",
+    "mock_collection_points": "node src/database/collection-points/index.js",
+    "mock_shipment": "node src/database/list-parcels/shipment.js",
+    "mock_shipments": "node src/database/list-parcels/index.js"
+  },
+  "dependencies": {
+    "faker": "^5.4.0",
+    "json-server": "0.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "1.18.4"
+  },
+  "keywords": []
+}
